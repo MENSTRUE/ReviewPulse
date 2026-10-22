@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Dataset
+data/raw/
+data/processed/
+*.csv
+*.parquet
+
+# Trained models
+*.joblib
+*.pkl
+*.pt
+*.pth
+*.onnx
+*.safetensors
+
+# Outputs
+reports/generated/
+outputs/
+artifacts/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
