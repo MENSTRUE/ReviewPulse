@@ -1,0 +1,22 @@
+{
+  "sentiment": {
+    "champion": "TFIDF-LinearSVC",
+    "metrics": {
+      "Accuracy": 0.9506781750924784,
+      "BalancedAccuracy": 0.9505467771168606,
+      "MacroF1": 0.950651089205306,
+      "WeightedF1": 0.9506610682163695,
+      "N": 811
+    }
+  },
+  "emotion": {
+    "champion": "TFIDF-LogReg",
+    "metrics": {
+      "Accuracy": 0.6263871763255241,
+      "BalancedAccuracy": 0.5885830367659934,
+      "MacroF1": 0.5885637039288134,
+      "WeightedF1": 0.6281037998576217,
+      "N": 811
+    }
+  }
+}

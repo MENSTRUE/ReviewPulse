@@ -1,0 +1,101 @@
+{
+  "project": "ReviewPulse",
+  "portfolio_progress": "15%",
+  "task": {
+    "sentiment": "Indonesian product-review sentiment classification",
+    "emotion": "Indonesian product-review emotion classification",
+    "summary": "TF-IDF keyword summary for negative reviews"
+  },
+  "source_audit": {
+    "rows": 5400,
+    "columns": 11,
+    "missing_cells": 0,
+    "full_row_duplicates": 7,
+    "duplicate_review_text_rows": 95,
+    "unique_review_texts": 5305,
+    "sentiment_counts": {
+      "Negative": 2821,
+      "Positive": 2579
+    },
+    "emotion_counts": {
+      "Happy": 1770,
+      "Sadness": 1202,
+      "Fear": 920,
+      "Love": 809,
+      "Anger": 699
+    },
+    "category_counts": {
+      "Computers and Laptops": 200,
+      "Toys and Hobbies": 200,
+      "Food and Drink": 200,
+      "Office & Stationery": 200,
+      "Automotive": 200,
+      "Animal Care": 200,
+      "Body Care": 200,
+      "Party Supplies and Craft": 200,
+      "Carpentry": 200,
+      "Other Products": 200,
+      "Sport": 200,
+      "Kitchen": 200,
+      "Books": 200,
+      "Camera": 200,
+      "Gaming": 200,
+      "Electronics": 200,
+      "Kids and Baby Fashion": 200,
+      "Men's Fashion": 200,
+      "Muslim Fashion": 200,
+      "Women's Fashion": 200,
+      "Movies and Music": 200,
+      "Health": 200,
+      "Beauty": 200,
+      "Phones and Tablets": 200,
+      "Mother and Baby": 200,
+      "Household": 200,
+      "Precious Metal": 80,
+      "Tour and Travel": 80,
+      "Property": 40
+    }
+  },
+  "split_policy": "group-aware split by normalized review text",
+  "model_selection": {
+    "selection_metric": "validation_MacroF1",
+    "sentiment_champion": "TFIDF-LinearSVC",
+    "emotion_champion": "TFIDF-LogReg"
+  },
+  "official_test": {
+    "sentiment": {
+      "champion": "TFIDF-LinearSVC",
+      "metrics": {
+        "Accuracy": 0.9506781750924784,
+        "BalancedAccuracy": 0.9505467771168606,
+        "MacroF1": 0.950651089205306,
+        "WeightedF1": 0.9506610682163695,
+        "N": 811
+      }
+    },
+    "emotion": {
+      "champion": "TFIDF-LogReg",
+      "metrics": {
+        "Accuracy": 0.6263871763255241,
+        "BalancedAccuracy": 0.5885830367659934,
+        "MacroF1": 0.5885637039288134,
+        "WeightedF1": 0.6281037998576217,
+        "N": 811
+      }
+    }
+  },
+  "claim_boundaries": {
+    "supported": [
+      "sentiment classification on the audited PRDECT-ID split",
+      "emotion classification on the audited PRDECT-ID split",
+      "TF-IDF lexical keyword summary",
+      "group-aware held-out evaluation"
+    ],
+    "unsupported": [
+      "causal root-cause analysis",
+      "universal marketplace performance",
+      "customer intent certainty",
+      "business KPI impact without external validation"
+    ]
+  }
+}

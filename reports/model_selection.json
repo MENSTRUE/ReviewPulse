@@ -1,0 +1,5 @@
+{
+  "selection_metric": "validation_MacroF1",
+  "sentiment_champion": "TFIDF-LinearSVC",
+  "emotion_champion": "TFIDF-LogReg"
+}
