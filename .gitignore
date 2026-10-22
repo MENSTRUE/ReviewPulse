@@ -49,3 +49,8 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Allow approved ReviewPulse models
+!models/
+!models/*.joblib
+!models/*.pkl
