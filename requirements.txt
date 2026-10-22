@@ -2,8 +2,6 @@ numpy
 pandas
 scikit-learn
 joblib
-matplotlib
-seaborn
-plotly
 streamlit
+plotly
 pytest
